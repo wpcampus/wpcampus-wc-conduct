@@ -1,6 +1,6 @@
 {
 	"name": "@wpcampus/wpcampus-wc-conduct",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "The Code of Conduct web component used by the WPCampus organization.",
 	"main": "index.js",
 	"repository": {
