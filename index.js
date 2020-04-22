@@ -5,10 +5,6 @@ const conductURL = "https://wpcampus.org/code-of-conduct/";
 
 // wpc-area is the grid system used by WPCampus themes.
 const template = `<div class="wpc-area wpc-conduct__area">
-	<div class="wpc-conduct__main">
-		<h2 class="wpc-conduct__heading">Our Code of Conduct</h2>
-		<p class="wpc-conduct__message">WPCampus seeks to provide a friendly, safe, and welcoming environment. All participants should be able to engage in constructive dialogue. They should share and learn with each other in an atmosphere of mutual respect. We require all participants adhere to the <a class="wpc-conduct__link" href="${conductURL}">WPCampus Code of Conduct</a>. This applies to all community interaction and events.</p>
-	</div>
 	<div class="wpc-conduct__graphic">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 235" style="enable-background:new 0 0 200 235;" xml:space="preserve">
 			<title>Eduwapuu</title>
@@ -116,6 +112,10 @@ const template = `<div class="wpc-area wpc-conduct__area">
 					c-1.8,0-3.2-1.4-3.2-3.2s1.4-3.2,3.2-3.2c1.8,0,3.2,1.4,3.2,3.2S115.5,64.8,113.8,64.8z"/>
 			</g>
 		</svg>
+	</div>
+	<div class="wpc-conduct__main">
+		<h2 class="wpc-conduct__heading">Our Code of Conduct</h2>
+		<p class="wpc-conduct__message">WPCampus seeks to provide a friendly, safe, and welcoming environment. All participants should be able to engage in constructive dialogue. They should share and learn with each other in an atmosphere of mutual respect. We require all participants adhere to the <a class="wpc-conduct__link" href="${conductURL}">WPCampus Code of Conduct</a>. This applies to all community interaction and events.</p>
 	</div>
 </div>`;
 
