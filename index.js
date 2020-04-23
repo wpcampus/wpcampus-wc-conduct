@@ -127,7 +127,7 @@ class WPCampusConduct extends WPCampusHTMLElement {
 	connectedCallback() {
 		super.connectedCallback();
 		this.setAttribute("role", "complementary");
-		this.setAttribute("aria-label", "Code of Conduct");
+		this.setAttribute("aria-label", "WPCampus Code of Conduct");
 		this.innerHTML = this.wrapTemplate(template, true);
 	}
 }
