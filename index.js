@@ -1,7 +1,7 @@
 const { WPCampusHTMLElement } = require("@wpcampus/wpcampus-wc-default");
 const stylesheet = require("./index.css");
 
-const conductURL = "https://wpcampus.org/code-of-conduct/";
+const conductURL = "https://www.wpcampus.org/about/guidelines/conduct/";
 
 // wpc-area is the grid system used by WPCampus themes.
 const template = `<div class="wpc-area wpc-conduct__area">
