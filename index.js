@@ -1,5 +1,4 @@
 const { WPCampusHTMLElement } = require("@wpcampus/wpcampus-wc-default");
-const stylesheet = require("./index.css");
 
 const conductURL = "https://www.wpcampus.org/about/guidelines/conduct/";
 
@@ -122,7 +121,6 @@ const template = `<div class="wpc-area wpc-conduct__area">
 class WPCampusConduct extends WPCampusHTMLElement {
 	constructor() {
 		super({ componentID: "conduct" });
-		this.addStyles(stylesheet);
 	}
 	connectedCallback() {
 		super.connectedCallback();
