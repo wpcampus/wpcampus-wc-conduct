@@ -1,5 +1,5 @@
-const { WPCampusHTMLElement } = require("@wpcampus/wpcampus-wc-default");
-require("./index.css");
+import { WPCampusHTMLElement } from "@wpcampus/wpcampus-wc-default";
+import "./wpcampus-conduct.css";
 
 const conductURL = "https://www.wpcampus.org/about/guidelines/conduct/";
 
@@ -132,4 +132,4 @@ class WPCampusConduct extends WPCampusHTMLElement {
 }
 customElements.define("wpcampus-conduct", WPCampusConduct);
 
-module.exports = WPCampusConduct;
+export default WPCampusConduct;

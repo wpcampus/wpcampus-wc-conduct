@@ -8,4 +8,4 @@
 # To enable this hook, rename this file to "pre-commit".
 
 npx eslint *.js *.json --fix
-npx stylelint *.css
+npx stylelint src/*.css
