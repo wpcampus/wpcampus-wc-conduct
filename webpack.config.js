@@ -16,6 +16,14 @@ module.exports = {
 					{ loader: "css-loader", options: { sourceMap: false } },
 					{ loader: "sass-loader", options: { sourceMap: false } }
 				]
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+				{
+					loader: 'file-loader',
+				},
+				],
 			}
 		]
 	},

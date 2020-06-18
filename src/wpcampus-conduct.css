@@ -2,9 +2,11 @@
 wpcampus-conduct {
 	--area-padding: 2rem;
 	--area-padding-large: 3rem;
+	--wpc-royal-blue: #1159bd;
+	--wpc-dark-blue: #2e3641;
 
 	display: block;
-	color: inherit;
+	color: #222;
 	font-size: inherit;
 	line-height: inherit;
 	text-align: inherit;
@@ -17,16 +19,6 @@ wpcampus-conduct {
 			color: inherit;
 		}
 
-		svg {
-			display: block;
-			max-width: 100%;
-			height: auto;
-		}
-
-		&__link {
-			font-weight: 600;
-		}
-
 		.wpc-conduct__heading {
 			font-size: 1.3rem;
 			line-height: 1.3;
@@ -34,59 +26,101 @@ wpcampus-conduct {
 			margin: 0 0 0.25rem;
 		}
 
-		.wpc-conduct__message {
-			margin: 0;
+		.wpc-conduct__message p {
 			font-size: 1rem;
-			line-height: 2;
+			line-height: 1.8;
+			font-weight: 400;
+			margin: 0 0 1rem;
 		}
 
-		.wpc-conduct__main {
-			& > *:last-child {
-				margin-bottom: 0;
+		.wpc-conduct__button {
+			display: flex;
+			align-items: center;
+
+			.wpc-button {
+				display: block;
+				width: 100%;
+				background: #474747;
+				border: 0;
+				margin: 0;
+				padding: 1rem 2rem;
+				color: #fff;
+				font-size: 1.2rem;
+				text-align: center;
+
+				&:hover,
+				&:focus {
+					background: var(--wpc-royal-blue);
+				}
 			}
 		}
 
-		&__areas {
+		.wpc-conduct__graphic__wrapper {
+			display: flex;
+			align-items: stretch;
+			border-right: 1px solid #e1e1e1;
+		}
+
+		.wpc-conduct__graphic {
+			width: 100%;
+			height: 100%;
+			background-image: url('./eduwapuu.png');
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.5;
+		}
+
+		.wpc-conduct__main__wrapper {
+			display: flex;
+			align-items: center;
 			padding: var(--area-padding) var(--area-padding-large);
 		}
 
-		/* ONLY Mobile */
-		@media (max-width: 919px) {
-			position: relative;
+		.wpc-conduct__main {
+			width: 100%;
+		}
 
-			.wpc-conduct__graphic {
-				position: absolute;
-				right: -15px;
-				top: 50%;
-				width: 100px;
-				transform: translateY(-50%);
+		&__container {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+
+			.wpc-conduct__graphic__wrapper {
+				grid-column: 1 / span 3;
 			}
 
-			.wpc-conduct__main {
-				padding-right: 60px;
+			.wpc-conduct__main__wrapper {
+				grid-column: 4 / span 9;
+			}
+
+			&:hover {
+				.wpc-conduct__graphic {
+					background-image: url('./eduwapuu-color.png');
+					opacity: 1;
+				}
+
+				.wpc-conduct__button {
+					.wpc-button {
+						background: var(--wpc-royal-blue);
+
+						&:hover,
+						&:focus {
+							background: var(--wpc-dark-blue);
+						}
+					}
+				}
 			}
 		}
 
-		/* Laptop */
-		@media (min-width: 920px) {
-			&__areas {
-				max-width: 90%;
-				margin: 0 auto;
-			}
-
-			&__area {
-				display: grid;
-				grid-template-columns: 100px 1fr;
-				grid-column-gap: 2rem;
-				align-items: center;
-
-				.wpc-conduct__main {
-					grid-column: 2 / span 1;
+		/* Desktop */
+		@media (min-width: 1380px) {
+			&__container {
+				.wpc-conduct__graphic__wrapper {
+					grid-column: 1 / span 4;
 				}
 
-				.wpc-conduct__graphic {
-					grid-column: 1 / span 1;
-					grid-row: 1;
+				.wpc-conduct__main__wrapper {
+					grid-column: 5 / span 8;
 				}
 			}
 		}
