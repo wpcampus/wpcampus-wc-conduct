@@ -41,6 +41,6 @@
 	},
 	"dependencies": {
 		"@wpcampus/wpcampus-wc-default": "^0.0.5",
-		"file-loader": "^6.0.0"
+		"file-loader": "^6.2.0"
 	}
 }
